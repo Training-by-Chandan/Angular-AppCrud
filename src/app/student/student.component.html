@@ -1,0 +1,20 @@
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of AllStudents |async">
+                <td>{{student.Name}}</td>
+                <td>{{student.Address}}</td>
+                <td>{{student.Email}}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
